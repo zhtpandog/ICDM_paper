@@ -460,7 +460,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_10.json', 'w') as f: json.dump(global_10, f)
 
-rawResults_10 = json.loads(open(data_directory + r'rawResults_10.json').read()) # thres, preci, recal, fone
+# rawResults_10 = json.loads(open(data_directory + r'rawResults_10.json').read()) # thres, preci, recal, fone
 
 
 # dv
@@ -486,7 +486,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_dv.json', 'w') as f: json.dump(global_dv, f)
 
-rawResults_dv = json.loads(open(data_directory + r'rawResults_dv.json').read()) # thres, preci, recal, fone
+# rawResults_dv = json.loads(open(data_directory + r'rawResults_dv.json').read()) # thres, preci, recal, fone
 
 
 # walk
@@ -512,7 +512,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_walk.json', 'w') as f: json.dump(global_walk, f)
 
-rawResults_walk = json.loads(open(data_directory + r'rawResults_walk.json').read()) # thres, preci, recal, fone
+# rawResults_walk = json.loads(open(data_directory + r'rawResults_walk.json').read()) # thres, preci, recal, fone
 
 
 # walk_dv
@@ -538,7 +538,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_walk_dv.json', 'w') as f: json.dump(global_walk_dv, f)
 
-rawResults_walk_dv = json.loads(open(data_directory + r'rawResults_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_walk_dv = json.loads(open(data_directory + r'rawResults_walk_dv.json').read()) # thres, preci, recal, fone
 
 
 # 10_dv
@@ -564,7 +564,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_10_dv.json', 'w') as f: json.dump(global_10_dv, f)
 
-rawResults_10_dv = json.loads(open(data_directory + r'rawResults_10_dv.json').read()) # thres, preci, recal, fone
+# rawResults_10_dv = json.loads(open(data_directory + r'rawResults_10_dv.json').read()) # thres, preci, recal, fone
 
 # 10_walk
 (generalResults_10_walk, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=12078,
@@ -589,7 +589,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_10_walk.json', 'w') as f: json.dump(generalResults_10_walk, f)
 
-rawResults_10_walk = json.loads(open(data_directory + r'rawResults_10_walk.json').read()) # thres, preci, recal, fone
+# rawResults_10_walk = json.loads(open(data_directory + r'rawResults_10_walk.json').read()) # thres, preci, recal, fone
 
 # 10_walk_dv
 (global_10_walk_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=12078,
@@ -614,7 +614,7 @@ print "index: " + str(index_max_f1) + ", f1: " + str(round(max_f1,4)) + ", prec:
 
 with open('global_10_walk_dv.json', 'w') as f: json.dump(global_10_walk_dv, f)
 
-rawResults_10_walk_dv = json.loads(open(data_directory + r'rawResults_10_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_10_walk_dv = json.loads(open(data_directory + r'rawResults_10_walk_dv.json').read()) # thres, preci, recal, fone
 
 ##################################################### varying training sizes #####################################################
 # varying training size, 3
@@ -728,7 +728,7 @@ plt.title('f1 with different num of positive samples')
 print max(part1_10_walk_dv[0][3])
 
 with open('part1_10_walk_dv.json', 'w') as f: json.dump(part1_10_walk_dv, f)
-rawResults_part1_10_walk_dv = json.loads(open(data_directory + r'rawResults_part1_10_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part1_10_walk_dv = json.loads(open(data_directory + r'rawResults_part1_10_walk_dv.json').read()) # thres, preci, recal, fone
 
 # 10
 (part1_10, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=465,
@@ -746,7 +746,7 @@ rawResults_part1_10_walk_dv = json.loads(open(data_directory + r'rawResults_part
 print max(part1_10[0][3])
 
 with open('part1_10.json', 'w') as f: json.dump(part1_10, f)
-rawResults_part1_10 = json.loads(open(data_directory + r'rawResults_part1_10.json').read()) # thres, preci, recal, fone
+# rawResults_part1_10 = json.loads(open(data_directory + r'rawResults_part1_10.json').read()) # thres, preci, recal, fone
 
 # dv
 (part1_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=465,
@@ -763,7 +763,7 @@ rawResults_part1_10 = json.loads(open(data_directory + r'rawResults_part1_10.jso
 print max(part1_dv[0][3])
 
 with open('part1_dv.json', 'w') as f: json.dump(part1_dv, f)
-rawResults_part1_dv = json.loads(open(data_directory + r'rawResults_part1_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part1_dv = json.loads(open(data_directory + r'rawResults_part1_dv.json').read()) # thres, preci, recal, fone
 
 # 10+dv
 (part1_10_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=465,
@@ -781,7 +781,7 @@ rawResults_part1_dv = json.loads(open(data_directory + r'rawResults_part1_dv.jso
 print max(part1_10_dv[0][3])
 
 with open('part1_10_dv.json', 'w') as f: json.dump(part1_10_dv, f)
-rawResults_part1_10_dv = json.loads(open(data_directory + r'rawResults_part1_10_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part1_10_dv = json.loads(open(data_directory + r'rawResults_part1_10_dv.json').read()) # thres, preci, recal, fone
 
 # plot of part1
 plt.plot(part1_10[0][2], part1_10[0][1], linewidth=2, linestyle="-", label="10-FEAT")
@@ -810,7 +810,7 @@ plt.title('Recall-Precision Curve', fontsize=20)
 print max(part2_10_walk_dv[0][3])
 
 with open('part2_10_walk_dv.json', 'w') as f: json.dump(part2_10_walk_dv, f)
-rawResults_part2_10_walk_dv = json.loads(open(data_directory + r'rawResults_part2_10_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part2_10_walk_dv = json.loads(open(data_directory + r'rawResults_part2_10_walk_dv.json').read()) # thres, preci, recal, fone
 
 # 10
 (part2_10, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=7275,
@@ -828,7 +828,7 @@ rawResults_part2_10_walk_dv = json.loads(open(data_directory + r'rawResults_part
 print max(part2_10[0][3])
 
 with open('part2_10.json', 'w') as f: json.dump(part2_10, f)
-rawResults_part2_10 = json.loads(open(data_directory + r'rawResults_part2_10.json').read()) # thres, preci, recal, fone
+# rawResults_part2_10 = json.loads(open(data_directory + r'rawResults_part2_10.json').read()) # thres, preci, recal, fone
 
 # dv
 (part2_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=7275,
@@ -845,7 +845,7 @@ rawResults_part2_10 = json.loads(open(data_directory + r'rawResults_part2_10.jso
 print max(part2_dv[0][3])
 
 with open('part2_dv.json', 'w') as f: json.dump(part2_dv, f)
-rawResults_part2_dv = json.loads(open(data_directory + r'rawResults_part2_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part2_dv = json.loads(open(data_directory + r'rawResults_part2_dv.json').read()) # thres, preci, recal, fone
 
 # 10+dv
 (part2_10_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=7275,
@@ -863,7 +863,7 @@ rawResults_part2_dv = json.loads(open(data_directory + r'rawResults_part2_dv.jso
 print max(part2_10_dv[0][3])
 
 with open('part2_10_dv.json', 'w') as f: json.dump(part2_10_dv, f)
-rawResults_part2_10_dv = json.loads(open(data_directory + r'rawResults_part2_10_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part2_10_dv = json.loads(open(data_directory + r'rawResults_part2_10_dv.json').read()) # thres, preci, recal, fone
 
 # plot of part2
 plt.plot(part2_10[0][2], part2_10[0][1], linewidth=2, linestyle="-", label="10-FEAT")
@@ -891,7 +891,7 @@ plt.title('Recall-Precision Curve', fontsize=20)
 print max(part3_10_walk_dv[0][3])
 
 with open('part3_10_walk_dv.json', 'w') as f: json.dump(part3_10_walk_dv, f)
-rawResults_part3_10_walk_dv = json.loads(open(data_directory + r'rawResults_part3_10_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part3_10_walk_dv = json.loads(open(data_directory + r'rawResults_part3_10_walk_dv.json').read()) # thres, preci, recal, fone
 
 # 10
 (part3_10, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=405,
@@ -909,7 +909,7 @@ rawResults_part3_10_walk_dv = json.loads(open(data_directory + r'rawResults_part
 print max(part3_10[0][3])
 
 with open('part3_10.json', 'w') as f: json.dump(part3_10, f)
-rawResults_part3_10 = json.loads(open(data_directory + r'rawResults_part3_10.json').read()) # thres, preci, recal, fone
+# rawResults_part3_10 = json.loads(open(data_directory + r'rawResults_part3_10.json').read()) # thres, preci, recal, fone
 
 # dv
 (part3_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=405,
@@ -926,7 +926,7 @@ rawResults_part3_10 = json.loads(open(data_directory + r'rawResults_part3_10.jso
 print max(part3_dv[0][3])
 
 with open('part3_dv.json', 'w') as f: json.dump(part3_dv, f)
-rawResults_part3_dv = json.loads(open(data_directory + r'rawResults_part3_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part3_dv = json.loads(open(data_directory + r'rawResults_part3_dv.json').read()) # thres, preci, recal, fone
 
 # 10+dv
 (part3_10_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=405,
@@ -944,7 +944,7 @@ rawResults_part3_dv = json.loads(open(data_directory + r'rawResults_part3_dv.jso
 print max(part3_10_dv[0][3])
 
 with open('part3_10_dv.json', 'w') as f: json.dump(part3_10_dv, f)
-rawResults_part3_10_dv = json.loads(open(data_directory + r'rawResults_part3_10_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part3_10_dv = json.loads(open(data_directory + r'rawResults_part3_10_dv.json').read()) # thres, preci, recal, fone
 
 # plot of part3
 plt.plot(part3_10[0][2], part3_10[0][1], linewidth=2, linestyle="-", label="10-FEAT")
@@ -972,7 +972,7 @@ plt.title('Recall-Precision Curve', fontsize=20)
 print max(part4_10_walk_dv[0][3])
 
 with open('part4_10_walk_dv.json', 'w') as f: json.dump(part4_10_walk_dv, f)
-rawResults_part4_10_walk_dv = json.loads(open(data_directory + r'rawResults_part4_10_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part4_10_walk_dv = json.loads(open(data_directory + r'rawResults_part4_10_walk_dv.json').read()) # thres, preci, recal, fone
 
 # 10
 (part4_10, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=1019,
@@ -990,7 +990,7 @@ rawResults_part4_10_walk_dv = json.loads(open(data_directory + r'rawResults_part
 print max(part4_10[0][3])
 
 with open('part4_10.json', 'w') as f: json.dump(part4_10, f)
-rawResults_part4_10 = json.loads(open(data_directory + r'rawResults_part4_10.json').read()) # thres, preci, recal, fone
+# rawResults_part4_10 = json.loads(open(data_directory + r'rawResults_part4_10.json').read()) # thres, preci, recal, fone
 
 # dv
 (part4_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=1019,
@@ -1007,7 +1007,7 @@ rawResults_part4_10 = json.loads(open(data_directory + r'rawResults_part4_10.jso
 print max(part4_dv[0][3])
 
 with open('part4_dv.json', 'w') as f: json.dump(part4_dv, f)
-rawResults_part4_dv = json.loads(open(data_directory + r'rawResults_part4_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part4_dv = json.loads(open(data_directory + r'rawResults_part4_dv.json').read()) # thres, preci, recal, fone
 
 # 10+dv
 (part4_10_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=1019,
@@ -1025,7 +1025,7 @@ rawResults_part4_dv = json.loads(open(data_directory + r'rawResults_part4_dv.jso
 print max(part4_10_dv[0][3])
 
 with open('part4_10_dv.json', 'w') as f: json.dump(part4_10_dv, f)
-rawResults_part4_10_dv = json.loads(open(data_directory + r'rawResults_part4_10_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part4_10_dv = json.loads(open(data_directory + r'rawResults_part4_10_dv.json').read()) # thres, preci, recal, fone
 
 # plot of part4
 plt.plot(part4_10[0][2], part4_10[0][1], linewidth=2, linestyle="-", label="10-FEAT")
@@ -1053,7 +1053,7 @@ plt.title('Recall-Precision Curve', fontsize=20)
 print max(part5_10_walk_dv[0][3])
 
 with open('part5_10_walk_dv.json', 'w') as f: json.dump(part5_10_walk_dv, f)
-rawResults_part5_10_walk_dv = json.loads(open(data_directory + r'rawResults_part5_10_walk_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part5_10_walk_dv = json.loads(open(data_directory + r'rawResults_part5_10_walk_dv.json').read()) # thres, preci, recal, fone
 
 # 10
 (part5_10, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=3507,
@@ -1071,7 +1071,7 @@ rawResults_part5_10_walk_dv = json.loads(open(data_directory + r'rawResults_part
 print max(part5_10[0][3])
 
 with open('part5_10.json', 'w') as f: json.dump(part5_10, f)
-rawResults_part5_10 = json.loads(open(data_directory + r'rawResults_part5_10.json').read()) # thres, preci, recal, fone
+# rawResults_part5_10 = json.loads(open(data_directory + r'rawResults_part5_10.json').read()) # thres, preci, recal, fone
 
 # dv
 (part5_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=3507,
@@ -1088,7 +1088,7 @@ rawResults_part5_10 = json.loads(open(data_directory + r'rawResults_part5_10.jso
 print max(part5_dv[0][3])
 
 with open('part5_dv.json', 'w') as f: json.dump(part5_dv, f)
-rawResults_part5_dv = json.loads(open(data_directory + r'rawResults_part5_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part5_dv = json.loads(open(data_directory + r'rawResults_part5_dv.json').read()) # thres, preci, recal, fone
 
 # 10+dv
 (part5_10_dv, generalResultsPosNumRef) = trialsWithVariedTrainSize(num_pos_sample=3507,
@@ -1106,7 +1106,7 @@ rawResults_part5_dv = json.loads(open(data_directory + r'rawResults_part5_dv.jso
 print max(part5_10_dv[0][3])
 
 with open('part5_10_dv.json', 'w') as f: json.dump(part5_10_dv, f)
-rawResults_part5_10_dv = json.loads(open(data_directory + r'rawResults_part5_10_dv.json').read()) # thres, preci, recal, fone
+# rawResults_part5_10_dv = json.loads(open(data_directory + r'rawResults_part5_10_dv.json').read()) # thres, preci, recal, fone
 
 # plot of part5
 plt.plot(part5_10[0][2], part5_10[0][1], linewidth=2, linestyle="-", label="10-FEAT")
